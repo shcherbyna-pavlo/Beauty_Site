@@ -152,7 +152,7 @@ img {
     max-width: 310px;
 }
 .m_line_2 {
-    padding-top: 80px;
+    padding: 100px 0;
 }
 h1 {
     margin: 0;
@@ -244,7 +244,7 @@ span {
     background: #F13C6E;
     color: #ffffff;
     overflow: hidden;
-    margin-top: 100px;
+    margin: 100px 0px;
     overflow: hidden;
     vertical-align: middle;
     padding: 45px 35px;
@@ -289,3 +289,85 @@ h3 {
     line-height: 16px;
     padding: 7.5px 0;
 }
+[alt="car"] {
+    margin-top: 25px;
+    margin-left: 96px;
+}
+.container [class="one"]:first-child {
+    margin-right: 26px;
+}
+table {
+    background: #ffffff;
+    border-collapse: collapse;
+    margin-bottom: 80px;
+}
+td {
+    border: 1px solid #EFEFEF;
+}
+[alt="impuls"] {
+    padding: 35px 64.5px;
+}
+[alt="impuls"]:hover {
+    box-shadow: 1px 1px 5px #F13C6E;
+}
+.f_line_1 {
+    background: #ffffff;
+}
+.f_list {
+    display: inline-block;
+    width: calc(100%/4);
+    margin-right: -4px;
+    padding-right: 30px;
+}
+.f_list p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 141%;
+    color: #000000;
+    padding: 60px 0 30px;
+}
+.f_menu>li {
+    list-style: none;
+}
+.f_menu a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 28px;
+    color: #828282;
+    transition: color .8s;
+}
+.f_menu a:hover {
+    color: #F13C6E;
+}
+.f_menu {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #EFEFEF;
+    padding-top: 30px;
+}
+/* .f_line_2 {
+    overflow: hidden;
+} */
+.f_line_2 .call {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.f_line_2 a {
+    display: inline-block;
+}
+.f_line_2>.call>a {
+    float: left;
+}
+/* [alt="ellipse"] {
+    position: relative;
+}
+[alt="facebook"] {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%, -50%);
+}
+[class="icon-vk"] {
+    color: #F13C6E;
+} */
