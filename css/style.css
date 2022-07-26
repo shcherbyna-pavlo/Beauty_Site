@@ -37,6 +37,7 @@ img {
     line-height: 16px;
 }
 .menu a {
+    display: block;
     text-decoration: none;
     color: #333333;
     border-radius: 5px;
@@ -44,6 +45,7 @@ img {
 }
 .menu>li {
     display: inline-block;
+    margin-right: -4px;
     padding: 0 15px;
 }
 .menu a:hover {
@@ -54,7 +56,7 @@ img {
     width: 100%;
     background: white;
     overflow: hidden;
-    padding: 18px 0;
+    padding: 20px 0;
 }
 .logo {
     float: left;
@@ -68,7 +70,7 @@ img {
     text-decoration: none;
     display: inline-block;
 }
-.call a:first-child {
+[href^="tel:"] {
     padding-right: 40px;
     font-size: 16px;
     line-height: 19px;
@@ -85,7 +87,7 @@ img {
     width: 170px;
     border-radius: 50px;
     border: 2px solid #F13C6E;
-    padding: 13px 0;
+    padding: 10px 0;
     transition: all .8s;
 }
 .button:hover {
@@ -108,7 +110,6 @@ img {
 }
 .menu_2 a {
     text-decoration: none;
-    line-height: 16px;
     color: #000000;
     border-radius: 5px;
     transition: all .8s;
@@ -119,16 +120,14 @@ img {
 }
 .menu_2>li {
     display: inline-block;
+    margin-right: -4px;
     padding: 0 20px;
 }
 .m_line_1 {
     position: relative;
     max-width: 100%;
     min-height: 604px;
-    /* background: #F13C6E; */
-    /* background-image: url(../images/bord.png); */
-    /* background-repeat: no-repeat; */
-    padding: 182px 0;
+    padding: 192px 0;
     color: white;
     overflow: hidden;
 }
@@ -141,39 +140,19 @@ img {
     z-index: -1;
     object-fit: cover;
 }
-/* .m_line_1 .container {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform:translate(-50%, -50%);
-} */
-/* .container .text_line_1 {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-} */
-
 .text_line_1 {
-    /* position: absolute;
-    left: 20.83%;
-    top: 31.78%; */
     max-width: 310px;
-}
-.m_line_2 {
-    padding: 80px 0 100px;
 }
 h1 {
     margin: 0;
     font-weight: 700;
     font-size: 48px;
-    line-height: 56px;
-    padding-bottom: 50px;
+    line-height: 44px;
 }
 p {
     margin: 0;
-    padding-bottom: 50px;
+    padding: 50px 0;
+    line-height: 18px;
 }
 .m_line_1 a {
     display: inline-block;
@@ -181,8 +160,10 @@ p {
     background: #F13C6E;
     border: 2px solid #FFFFFF;
 }
+.m_line_2 {
+    padding: 80px 0 100px;
+}
 h2 {
-    padding-bottom: 38px;
     margin: 0;
     font-weight: 700;
     font-size: 24px;
@@ -190,28 +171,26 @@ h2 {
     color: #000000;
 }
 .line_card {
-    margin: 0 -15px;
-    padding: 0;
     list-style: none;
+    overflow: hidden;
+    margin: 0 -15px;
+    padding: 38px 0 0;
 }
 .line_card>li {
-    width: calc(100% / 4);
-    /* display: inline-block;
-    margin-right: -4px; */
     float: left;
+    width: calc(100% / 4);
     padding: 0 15px;
 }
 .card {
     width: 100%;
     background: #ffffff;
-    padding-top: 25px;
+    padding: 25px 30px;
 }
 .card:hover {
     box-shadow: 1px 1px 6px #F13C6E;
 }
 .card_photo {
-    background: #FFFFFF;
-    width: 125px;
+    max-width: 125px;
     margin: 0 auto;
 }
 .card_text {
@@ -321,21 +300,27 @@ td {
 [alt="impuls"]:hover {
     box-shadow: 1px 1px 5px #F13C6E;
 }
-.f_line_1 {
+#footer {
     background: #ffffff;
 }
+.f_line_1 {
+    padding: 60px 0;
+    margin: 0 -15px;
+    overflow: hidden;
+}
 .f_list {
-    display: inline-block;
+    float: left;
     width: calc(100%/4);
     margin-right: -4px;
-    padding-right: 30px;
+    padding: 0 15px;
 }
-.f_list p {
+h4 {
+    margin: 0;
+    padding-bottom: 30px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 141%;
+    line-height: 23px;
     color: #000000;
-    padding: 60px 0 30px;
 }
 .f_menu>li {
     list-style: none;
@@ -364,21 +349,24 @@ td {
     margin: 0;
     overflow: hidden;
 }
-.f_line_2 a {
+/* .f_line_2 a {
     display: inline-block;
-}
-.f_line_2>.call>a {
-    float: left;
-}
-/* [alt="ellipse"] {
-    position: relative;
-}
-[alt="facebook"] {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform:translate(-50%, -50%);
-}
-[class="icon-vk"] {
-    color: #F13C6E;
 } */
+.f_line_2 span {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+.f_line_2>a {
+    text-decoration: none;
+    float: left;
+    width: 45px;
+    padding: 10px 0;
+    margin-right: 20px;
+    background: #ffffff;
+    border-radius: 50%;
+    border: 2px solid #F13C6E;
+}
+[class^="icon"] {
+    color: #F13C6E;
+}
