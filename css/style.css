@@ -156,15 +156,22 @@ p {
 }
 .m_line_1 a {
     display: inline-block;
+    text-decoration: none;
     color: white;
     background: #F13C6E;
     border: 2px solid #FFFFFF;
+    transition: all .8s;
+}
+.m_line_1 a:hover {
+    color: #000000;
+    background: #ffffff;
 }
 .m_line_2 {
     padding: 80px 0 100px;
 }
 h2 {
     margin: 0;
+    padding-bottom: 38px;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -172,34 +179,49 @@ h2 {
 }
 .line_card {
     list-style: none;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin: 0 -15px;
-    padding: 38px 0 0;
+    padding: 0;
 }
 .line_card>li {
-    float: left;
+    display: inline-block;
     width: calc(100% / 4);
+    margin-right: -4px;
     padding: 0 15px;
 }
 .card {
     width: 100%;
     background: #ffffff;
-    padding: 25px 30px;
+    padding: 23px 30px;
+    transition: box-shadow .8s;
 }
 .card:hover {
-    box-shadow: 1px 1px 6px #F13C6E;
+    box-shadow: 2px 2px 8px #F13C6E;
+}
+.card a {
+    text-decoration: none;
 }
 .card_photo {
     max-width: 125px;
     margin: 0 auto;
+    overflow: hidden;
+    transition: transform 2s;
+}
+.card_photo:hover {
+    transform: scale(1.3);
 }
 .card_text {
-    background: #FFFFFF;
-    padding: 20px 30px 25px;
+    margin: 0;
+    padding-top: 20px;
     text-align: center;
 }
-.card_text p {
-    padding-bottom: 20px;
+h5 {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
 }
 span {
     display: inline-block;
@@ -209,11 +231,10 @@ span {
     text-align: center;
     letter-spacing: 0.05em;
     color: #000000;
-    padding-bottom: 20px;
+    padding: 15px 0;
 }
 .button_2 {
     display: inline-block;
-    text-decoration: none;
     color: #ffffff;
     letter-spacing: 0.05em;
     line-height: 16px;
@@ -228,25 +249,31 @@ span {
     color: #000000;
     border: 1px solid #F13C6E;
 }
+.line2_cards {
+    margin: 0 -15px;
+    padding: 100px 0;
+}
 .one {
     display: inline-block;
-    max-width: 540px;
-    background: #F13C6E;
+    /* overflow: hidden; */
+    width: calc(100%/2);
     color: #ffffff;
-    overflow: hidden;
-    margin: 100px 0px;
-    overflow: hidden;
-    vertical-align: middle;
-    padding: 45px 35px;
+    margin-right: -4px;
+    padding: 0 15px;
 }
-.one img {
+.one>div {
+    background: #F13C6E;
+    padding: 35px 40px;
+    overflow: hidden;
+}
+/* .one img {
     float: right;
-    /* vertical-align: middle; */
-}
+    margin: 0 auto;
+    vertical-align: baseline;
+} */
 .one_text {
     display: inline-block;
-    max-width: 250px;
-    margin-right: 65px;
+    width: 250px;
 }
 h3 {
     margin: 0;
@@ -255,20 +282,36 @@ h3 {
     line-height: 21px;
 }
 .one p {
-    padding: 25px 0;
+    padding: 21px 0 25px;
+    line-height: 20px;
 }
-[type="email"] {
+/* [type="email"] {
     width: 225px;
     height: 35px;
     border-radius: 30px;
+    border: none;
+} */
+input {
+    outline-color: #F13C6E;
+    width: 225px;
+    height: 35px;
+    border-radius: 30px;
+    border: none;
 }
-.one_text_2 {
-    display: inline-block;
-    max-width: 250px;
-    /* margin-right: 65px; */
+input::placeholder {
+    padding: 0 25px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #C4C4C4;
 }
-.one_text_2 a {
+/* .one_text_2 {
     display: inline-block;
+    width: 250px;
+    margin: 35px 40px;
+} */
+.one_text a {
+    display: block;
     text-decoration: none;
     color: #ffffff;
     background: #F13C6E;
@@ -277,28 +320,41 @@ h3 {
     width: 170px;
     text-align: center;
     line-height: 16px;
-    padding: 7.5px 0;
+    padding: 8px 0;
+    transition: all .8s;
 }
-[alt="car"] {
+.one_text a:hover {
+    background: #FFFFFF;
+    color: #000000;
+}
+.img_one {
+    float: right;
+    padding-top: 18px;
+}
+/* [alt="car"] {
     margin-top: 25px;
     margin-left: 96px;
-}
-.container [class="one"]:first-child {
+} */
+/* .container [class="one"]:first-child {
     margin-right: 26px;
-}
+} */
 table {
     background: #ffffff;
     border-collapse: collapse;
     margin-bottom: 80px;
+    /* overflow: hidden; */
 }
 td {
     border: 1px solid #EFEFEF;
+    overflow: hidden;
 }
-[alt="impuls"] {
-    padding: 35px 65px;
+table a {
+    display: block;
+    padding: 33px 65px;
+    transition: transform 2s;
 }
-[alt="impuls"]:hover {
-    box-shadow: 1px 1px 5px #F13C6E;
+table a:hover {
+    transform: scale(1.5);
 }
 #footer {
     background: #ffffff;
@@ -341,17 +397,11 @@ h4 {
     border-top: 1px solid #EFEFEF;
     padding-top: 30px;
 }
-/* .f_line_2 {
-    overflow: hidden;
-} */
 .f_line_2 .call {
     padding: 0;
     margin: 0;
     overflow: hidden;
 }
-/* .f_line_2 a {
-    display: inline-block;
-} */
 .f_line_2 span {
     display: block;
     padding: 0;
