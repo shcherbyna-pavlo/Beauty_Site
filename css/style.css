@@ -59,7 +59,7 @@ img {
     padding: 20px 0;
 }
 .logo {
-    float: left;
+    display: inline-block;
 }
 .call {
     float: right;
@@ -213,7 +213,6 @@ h2 {
     text-align: center;
 }
 h5 {
-    display: inline-block;
     padding: 0;
     margin: 0;
     font-weight: 400;
